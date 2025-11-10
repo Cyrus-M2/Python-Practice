@@ -47,22 +47,22 @@
 # break statement : stop the loop completely when condition met
 # / continue statement : skip the condition
 
-i = 1
-while i < 6:
-    if i == 4:
-        break
-    print(i)
-    i += 1
+# i = 1
+# while i < 6:
+#     if i == 4:
+#         break
+#     print(i)
+#     i += 1
 
-# continue
-i = 0
-while i < 6:
-    i += 1
-    if i == 4:
-        continue
-    print(i)    
-else:
-    print(f"{i} : the condition is no longer true")    
+# # continue
+# i = 0
+# while i < 6:
+#     i += 1
+#     if i == 4:
+#         continue
+#     print(i)    
+# else:
+#     print(f"{i} : the condition is no longer true")    
 
 
 # For loop : is used for iteration over sequences
@@ -80,13 +80,45 @@ else:
 
 # range function range(start, stop, step) step means skip
 # FOR LOOP ALSO HAS BREAK , CONTINUE
-for x in range(2,10):
-    if x >= 7:
-        continue
-    print(x)
+# for x in range(2,10):
+#     if x >= 7:
+#         continue
+#     print(x)
 
 # nested loops "" for every iteration of the outer loop it must complete the whole iteration of the inner loop
-colors = ["red", "yellow", "green"]
-for x in colors:
-    # for y in list_fruits:
-        print(f"{x} : {y}")    
+# colors = ["red", "yellow", "green"]
+# for x in colors:
+#     # for y in list_fruits:
+#         print(f"{x} : {y}")    
+
+
+# password = "" # empty string
+# while password != "letmein":
+#     password = input("Give me your password:: ")
+# print("Access granted !")
+
+# python methods for looping actions
+# enumerate() : useful when we want box index and value
+names = ["Bill", "Jane", "Isak"]
+for index,name in enumerate(names):
+    print(index,name)
+
+
+# comprehesions : list comprehension : loop one liners
+squares = []        
+for x in range[5]:
+      squares.append(x)
+print(squares)      
+
+# list comprehension
+squares = [i * i for i in range(5)]
+print(f"squares list comprehension {squares}")
+
+# traditional loop
+t_squares=[]
+for i in range(5):
+     multiples = i * i
+     t_squares.append(multiples)
+
+print(f"traditional loop returning a list {t_squares}")
+     

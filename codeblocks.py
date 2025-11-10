@@ -99,26 +99,46 @@
 
 # python methods for looping actions
 # enumerate() : useful when we want box index and value
-names = ["Bill", "Jane", "Isak"]
-for index,name in enumerate(names):
-    print(index,name)
+# names = ["Bill", "Jane", "Isak"]
+# for index,name in enumerate(names):
+#     print(index,name)
 
 
-# comprehesions : list comprehension : loop one liners
-squares = []        
-for x in range[5]:
-      squares.append(x)
-print(squares)      
+# # comprehesions : list comprehension : loop one liners
+# squares = []        
+# for x in range[5]:
+#       squares.append(x)
+# print(squares)      
 
-# list comprehension
-squares = [i * i for i in range(5)]
-print(f"squares list comprehension {squares}")
+# # list comprehension
+# squares = [i * i for i in range(5)]
+# print(f"squares list comprehension {squares}")
 
-# traditional loop
-t_squares=[]
-for i in range(5):
-     multiples = i * i
-     t_squares.append(multiples)
+# # traditional loop
+# t_squares=[]
+# for i in range(5):
+#      multiples = i * i
+#      t_squares.append(multiples)
 
-print(f"traditional loop returning a list {t_squares}")
-     
+# print(f"traditional loop returning a list {t_squares}")
+
+# functions
+# reusable block of code designed to perform a specific task
+# a function will receive input (arguments or parameters) -> it processes the input in accordance to logic in code block -> gives back a desired output - single ValueError
+# define a function in python : def - nameofthefunction():
+# process -> absent of process indicate pass (marks a code block as void)
+# return -> specifies the return value of a function
+# None -> specifies no return was specified for the function
+# to be executed functions require to be called : call a function : functionName()
+
+def greet_function():
+     greeting = f"Hello, this is the sum of the two numbers given "
+     return greeting
+# parameters are placeholders for inputs to be processed in a function - max 6 - functions are reusable
+def add(a,b):
+     result = greet_function()
+     sum = a + b
+     return f"{result} : {sum}"
+
+print(greet_function())
+print(add(20, 10)) # 20, 10 function arguments -> fulfillment for the parameters

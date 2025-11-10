@@ -140,5 +140,20 @@ def add(a,b):
      sum = a + b
      return f"{result} : {sum}"
 
+# function with default parameters
+def multiplication(a=20, b=10):
+     return a * b
+
+# special types of python functionality in functions
+# one liner functions : lambda function :: quick functionalities
+square = lambda x: x * x
+# multiple values return
+def math_ops(x,y):
+     return x * y, x / y, x - y
+multi, divis, sub = math_ops(10,10)
+
 print(greet_function())
 print(add(20, 10)) # 20, 10 function arguments -> fulfillment for the parameters
+print(multiplication())
+print(square(4))
+print(multi, divis, sub)

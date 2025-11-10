@@ -157,3 +157,19 @@ print(add(20, 10)) # 20, 10 function arguments -> fulfillment for the parameters
 print(multiplication())
 print(square(4))
 print(multi, divis, sub)
+
+"""
+
+Why Use Functions
+1. Reusability - write once, use everywhere
+2. Organization - keeps code modular readable
+3. Debugging - Sammaler chunks lead to ease in debugging
+4. Collaboration - makes it easier to work with other code from django.conf import settings
+
+Pro Tips
+1. Keep functions short - one clear purpose for the function
+2. Name them clearly - use verb like words
+3. Avoid side effects unless intential
+4. Document with doc strings - always document the intent of your function
+
+"""
